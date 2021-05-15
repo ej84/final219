@@ -1,0 +1,49 @@
+{
+  "name": "basicwebpack",
+  "version": "1.0.0",
+  "description": "![auth0(1)](screenshots/login.PNG)\r ## api cities page\r ![auth0(2)](screenshots/after_login.PNG)\r ![database from authentication](screenshots/database_auth0.PNG)",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js",
+    "dev": "nodemon ./index.js",
+    "ui": "browser-sync start --config bs-config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "browser-sync": "^2.26.14",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-openid-connect": "^2.3.1",
+    "express-session": "^1.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "open": "^8.0.4",
+    "passport": "^0.4.1",
+    "passport-auth0": "^1.4.0",
+    "pug": "^3.0.2",
+    "ui": "^0.2.4"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^8.1.0",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ej84/BasicWebP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ej84/BasicWebP/issues"
+  },
+  "homepage": "https://github.com/ej84/BasicWebP#readme"
+}
