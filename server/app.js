@@ -2,10 +2,16 @@
 const express = require('express');
 const open = require("open");
 const bodyParser = require('body-parser');
+require("dotenv").config();
+const cookieParser = require('cookie-parser');
+const exphbs = require('express-handlebars');
+const request = require("request");
 var cors = require('cors')
 const app = express();
 app.use(cors())
 app.use(express.static('docs'));
+
+app.use(cookieParser());
 
 // create express app
 
